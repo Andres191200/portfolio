@@ -1,5 +1,22 @@
+.no-responsive-message{
+    position: absolute;
+    bottom: 2rem;
+}
+
+p{
+    display: inline;
+    bottom: 0;
+    color:rgb(48, 180, 125);
+    font-weight: 600 !important;
+    font-size: 30px !important;
+    &:last-of-type{
+        margin-left: 2rem;
+    }
+}
+
 .projects{
-    display: flex;
+    display: none;
+    // display: flex;
     justify-content: space-between;
     height: 100%;
     margin-block: 7.5vh;
