@@ -1,0 +1,54 @@
+.hero > .left-section{
+    height:40%;
+    width: 50vw;
+    margin: 3vw;
+
+    & > div:first-of-type{
+        position:relative;
+    }
+
+    & > div:first-of-type::before{
+        content: '';
+        animation: fadeInTopBottom 250ms ease-out forwards;
+        animation-delay: 200ms;
+        opacity: 0;
+        transform-origin: top;
+        display: inline;
+        position:absolute;
+        background-color: rgb(20, 121, 99);
+        height:100px;
+        width: 10px;
+        border-radius: 2rem;
+        left: -1vw;
+        border-bottom: 100px solid rgb(92, 1, 153);
+    }
+    h1.hi-text, h1 + .name{
+        display: inline;
+        font-size: 6rem;
+        font-weight: bold;
+        color:rgb(80, 80, 80);
+        opacity: 0;
+        position:relative;
+        animation: fadeInDownText 250ms ease-out forwards;
+        animation-delay: 350ms;
+
+        & + .name{
+            color:rgb(20, 121, 99);
+        }
+    }
+
+    span{
+        display: block;
+        margin-block: 2rem;
+        opacity: 0;
+        position: relative;
+        font-size: 2rem;
+        animation: fadeInDownText 250ms ease-out forwards;
+        animation-delay: 450ms;
+
+        &>small{
+            color:rgb(92, 1, 153);
+            font-weight: bold;
+        }
+    }
+}

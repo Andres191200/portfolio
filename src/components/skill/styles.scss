@@ -1,0 +1,108 @@
+.skill{
+    display:flex;
+
+    &:nth-of-type(1) > .skill-icon{
+        border: 5px solid rgb(124, 0, 196);
+        animation-delay: 500ms;
+        & + h3{
+            animation-delay: 500ms;
+        }
+    }
+
+    &:nth-of-type(2) > .skill-icon{
+        border: 5px solid rgb(207, 7, 0);
+        animation-delay: 600ms;
+        & + h3{
+            animation-delay: 600ms;
+        }
+    }
+    &:nth-of-type(3) > .skill-icon{
+        border: 5px solid rgb(109, 252, 128);
+        animation-delay: 700ms;
+        & + h3{
+            animation-delay: 700ms;
+        }
+    }
+    &:nth-of-type(4) > .skill-icon{
+        border: 5px solid rgb(81, 81, 231);
+        animation-delay: 800ms;
+        & + h3{
+            animation-delay: 800ms;
+        }
+    }
+    
+    &.react.skill > h3{
+        color: rgb(124, 0, 196);
+        font-weight: bold;
+    }
+
+    &.javascript-skill{
+        margin-left: 10vw;
+        & > h3{
+            color: rgb(207, 7, 0);
+            font-weight: bold;
+        }
+    }
+
+    &.html5-skill{
+        margin-left: 10vw;
+        & > h3{ 
+            color: rgb(109, 252, 128);
+            font-weight: bold;
+        }
+    }
+
+    &.css3\/sass-skill > h3{
+        color: rgb(81, 81, 231);
+        font-weight: bold;
+    }
+
+    
+    .skill-icon{
+        padding: 1rem;
+        border-radius: 10rem;
+        background-color: rgba(0,0,0,.5);
+        transform:scale(0);
+        animation: fadeIn 400ms cubic-bezier(.54,1.22,.57,1.69) forwards;
+
+        &:hover{
+            transform:scale(1.2) !important;
+        }
+
+        .react-icon {
+            fill:rgb(124, 0, 196);
+        }
+
+        .javascript-icon{
+            fill:rgb(207, 7, 0);
+        }
+
+        .html-icon{
+            fill:rgb(109, 252, 128);
+        }
+
+        .css-icon{
+            fill:rgb(81, 81, 231);
+        }
+    }
+
+    h3{
+        transform: scale(0);
+        opacity: 0;
+        animation: fadeIn 400ms cubic-bezier(.54,1.22,.57,1.69) forwards;
+        animation-delay:1s; 
+        font-size: 1.2rem;
+        margin: auto 1vw;
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        transform: scale(0);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}

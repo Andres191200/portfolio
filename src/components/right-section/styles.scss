@@ -1,0 +1,9 @@
+.hero > section[class='right-section']{
+    height:80%;
+    width:30vw;
+        & > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
